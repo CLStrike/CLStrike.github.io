@@ -1,3 +1,152 @@
-<html>
-  <p>test</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music + Tech Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #111;
+      color: #eee;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1db954, #191414);
+      padding: 2rem;
+      text-align: center;
+      color: #fff;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 0.5rem 0 0;
+      font-style: italic;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      color: #1db954;
+      border-bottom: 1px solid #333;
+      padding-bottom: 0.5rem;
+    }
+
+    ul {
+      list-style: square;
+      padding-left: 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #191414;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    button {
+      background: #1db954;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #14833b;
+    }
+
+    #quote {
+      margin-top: 1rem;
+      font-style: italic;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sound + Code</h1>
+    <p>Where rhythm meets algorithm</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I'm a music technologist and software developer blending the art of sound with the precision of code.
+        From composing tracks in REAPER to building full-stack applications, I explore how creativity and computation can shape immersive audio-visual experiences.
+      </p>
+      <p>
+        I use tools like REAPER, Max/MSP, Web Audio API, and modern coding stacks to create everything from generative music to interactive web tools.
+      </p>
+    </section>
+
+    <section>
+      <h2>What I Do</h2>
+      <ul>
+        <li>🎹 Music Production & Sound Design in REAPER</li>
+        <li>🎛️ Custom Audio Tools & DSP Programming</li>
+        <li>🎼 Generative Music with Max/MSP & Web Audio</li>
+        <li>🔊 Interactive Audio Installations & Interfaces</li>
+        <li>💻 JavaScript, Python, and Web App Development</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>IT Projects</h2>
+      <ul>
+        <li>🖥️ Full-Stack Web Apps (Node.js, React, Flask)</li>
+        <li>📊 Data Visualization & Sonification Projects</li>
+        <li>🧠 AI-Enhanced Music Tools (ML models + audio)</li>
+        <li>🛠️ Automation Scripts & Custom Workflow Tools</li>
+        <li>🔐 Backend Services with REST APIs & Auth</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Inspiration</h2>
+      <button onclick="generateQuote()">🎧 Inspire Me</button>
+      <div id="quote"></div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Sound + Code • Built with ❤️ & JavaScript
+  </footer>
+
+  <script>
+    const quotes = [
+      "“Music is the arithmetic of sounds as optics is the geometry of light.” – Claude Debussy",
+      "“Technology is the amplifier of creativity.”",
+      "“In code we trust, in rhythm we flow.”",
+      "“Generative music is the sound of possibility.” – Brian Eno",
+      "“Simplicity is the ultimate sophistication — in design and in sound.”"
+    ];
+
+    function generateQuote() {
+      const quote = quotes[Math.floor(Math.random() * quotes.length)];
+      document.getElementById('quote').innerText = quote;
+    }
+  </script>
+
+</body>
 </html>
