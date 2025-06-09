@@ -1,98 +1,27 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sound + Code Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #111;
-      color: #eee;
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(135deg, #1db954, #191414);
-      padding: 2rem;
-      text-align: center;
-      color: #fff;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
-    header p {
-      margin: 0.5rem 0 0;
-      font-style: italic;
-    }
-
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-
-    section {
-      margin-bottom: 2rem;
-    }
-
-    h2 {
-      color: #1db954;
-      border-bottom: 1px solid #333;
-      padding-bottom: 0.5rem;
-    }
-
-    ul {
-      list-style: square;
-      padding-left: 1.5rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #191414;
-      color: #777;
-      font-size: 0.9rem;
-    }
-
-    button {
-      background: #1db954;
-      color: #fff;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      cursor: pointer;
-      border-radius: 4px;
-      transition: background 0.3s ease;
-    }
-
-    button:hover {
-      background: #14833b;
-    }
-
-    #quote {
-      margin-top: 1rem;
-      font-style: italic;
-      color: #aaa;
-    }
+    body { font-family: 'Inter', sans-serif; }
   </style>
 </head>
-<body>
+<body class="bg-gray-900 text-gray-100">
 
-  <header>
-    <h1>Sound + Code</h1>
-    <p>Where rhythm meets algorithm</p>
+  <header class="bg-gradient-to-r from-green-500 to-gray-900 py-12 text-center text-white">
+    <h1 class="text-4xl font-bold">Sound + Code</h1>
+    <p class="italic mt-2">Where rhythm meets algorithm</p>
   </header>
 
-  <main>
+  <main class="max-w-4xl mx-auto px-4 py-12 space-y-12">
+
     <section>
-      <h2>About Me</h2>
-      <p>
+      <h2 class="text-green-400 text-2xl font-semibold border-b border-gray-700 pb-2 mb-4">About Me</h2>
+      <p class="mb-4">
         I'm a hands-on audio and tech enthusiast working at the intersection of music and software. From writing and recording songs to building tools that help with sound design, I like exploring practical and creative ways to work with sound and code.
       </p>
       <p>
@@ -101,8 +30,8 @@
     </section>
 
     <section>
-      <h2>What I Do</h2>
-      <ul>
+      <h2 class="text-green-400 text-2xl font-semibold border-b border-gray-700 pb-2 mb-4">What I Do</h2>
+      <ul class="list-disc pl-6 space-y-2">
         <li>🎛️ Build custom MIDI controllers and audio tools</li>
         <li>🎹 Record and mix music (mostly solo or duo projects)</li>
         <li>💡 Prototype interactive faders, knobs, and automation</li>
@@ -112,8 +41,8 @@
     </section>
 
     <section>
-      <h2>IT Projects</h2>
-      <ul>
+      <h2 class="text-green-400 text-2xl font-semibold border-b border-gray-700 pb-2 mb-4">IT Projects</h2>
+      <ul class="list-disc pl-6 space-y-2">
         <li>🛠️ Built simple automation scripts for workflow tasks</li>
         <li>🌍 Made visual HTML maps of infrastructure with SVG</li>
         <li>📡 Used WAPI to link a Behringer Wing to web tools</li>
@@ -123,13 +52,14 @@
     </section>
 
     <section>
-      <h2>Inspiration</h2>
-      <button onclick="generateQuote()">🎧 Inspire Me</button>
-      <div id="quote"></div>
+      <h2 class="text-green-400 text-2xl font-semibold border-b border-gray-700 pb-2 mb-4">Inspiration</h2>
+      <button onclick="generateQuote()" class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded transition">🎧 Inspire Me</button>
+      <div id="quote" class="mt-4 italic text-gray-400"></div>
     </section>
+
   </main>
 
-  <footer>
+  <footer class="text-center py-8 bg-gray-800 text-gray-400 text-sm">
     &copy; 2025 Sound + Code • Built with ❤️ & JavaScript
   </footer>
 
